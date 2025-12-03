@@ -2,7 +2,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#890000;
+    background-color: #9D9A9A;
+   
     color:#333;
     line-height: 1.6;
 }
@@ -13,7 +14,7 @@ a {
 }
 
 header {
-    background-color: #DC2424;
+    background-color: #530303;
     color: white;
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
