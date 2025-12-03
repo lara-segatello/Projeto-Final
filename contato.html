@@ -5,16 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contato.css">
     <title>NewsLinks</title>
+
+    
+    <link rel="shortcut icon" href="/img/unnamed.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
-
+            <div class="header-content">
+            <img src="/img/unnamed.jpg" alt="LogoNews Life" class="logo" width="40px" height="40px">
+            <form class="search-bar" action="/search" method="get"> 
+            <input type="text" placeholder="Busque" name="p" aria-label="Pesquisar uma informação">
+            <button type="submit">🔍</button>
+        </form>
+        <nav class="main-nav">
+            <ul>
+                    <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="noticias.html" class="nav-link">Noticias</a></li>
+                </ul>
+        </div>
     </header>
     <main>
-
+        <div class="corpoFormulario">
+         <h1>Entre em contato conosco</h1>
+         <label for="name">Nome</label>
+         <input type="text" id="name" name="Nome" placeholder="Digite seu Email" maxlenght="50" size="30" aria-live="polite" action method="post"  required>
+            <br></br>
+         <label for="Telefone">Telefone</label>
+         <input type="text" id="telefone" name="Telefone" placeholder="(XX)XXXXX-XXXX" maxlenght="50" size="30" aria-live="polite" action method="post" required>
+            <br></br>
+         <label for="email">Email</label>
+         <input type="text" id="email" name="Email" placeholder="Digite seu Email" maxlenght="50" size="30" aria-live="polite" action method="post"  required>
+        <label for="interesses">Interreses</label>
+        
+         <textarea type="text" id="interreses" name="Interreses" placeholder="Apresente seus Interreses" maxlenght="50" size="30" action method="post" aria-live="polite" required>
+        
+         </textarea>
+         <label>Termos de confiabilidade</label>
+         <input type="checkbox">
+         <button type="enviar" value="Acessar"><a  href="cadastro_produto.html" class="nav-link">Enviar</a></button>
+        </div>
     </main>
     <footer>
-        
+        @anna.souza 2025-11-26 NewsLinks
     </footer>
 </body>
 </html>
