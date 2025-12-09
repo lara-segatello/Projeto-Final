@@ -1,4 +1,4 @@
-## NewsLink
+# NewsLink
 Identificação: Lara Segatello Marquez 
 
 💡Este projeto apresenta um site de notícias, ele foi realizado com a códificação do HTML juntamente do CSS. 
