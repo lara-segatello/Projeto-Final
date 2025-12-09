@@ -1,41 +1,46 @@
+/* ===== Estilo geral da página ===== */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte padrão */
     margin: 0;
     padding: 0;
-    background-color:#9D9A9A;
-    color:#333;
-    line-height: 1.6;
+    background-color:#9D9A9A; /* Fundo da página */
+    color:#333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
 }
 
+/* ===== Cabeçalho ===== */
 header {
-    background-color: #D9D9D9;
+    background-color: #D9D9D9; /* Cor do header */
     color:white;
     padding: 15px 0;
-     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    position: sticy; /* Mantém o cabeçalho no topo*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra */
+    position: sticky; /* Fixa no topo */
     top: 0;
     z-index: 1000;
 }
 
+/* Conteúdo interno do header */
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: spacebtween;
+    justify-content: space-between; /* Espaça os elementos */
     align-items: center;
     flex-wrap: wrap;
 }
 
+/* ===== Logo ===== */
 .logo {
-    border-radius: 50%;
+    border-radius: 50%; /* Logo redonda */
     width: 50px;
     height: 50px;
     object-fit: cover;
 }
 
+/* ===== Menu de navegação ===== */
 .main-nav ul {
-    list-style:none;
+    list-style:none; /* Remove marcadores */
     padding: 0;
     margin: 0;
     display: flex;
@@ -44,14 +49,15 @@ header {
 
 .nav-link {
     padding: 5px 10px;
-    transition:color 0.3s;
+    transition:color 0.3s; /* Animação suave */
     font-weight: bold;
 }
 
 .nav-link:hover {
-    color:#530303;
+    color:#530303; /* Cor no hover */
 }
 
+/* ===== Barra de busca ===== */
 .search-bar {
     display:flex;
     align-items: center;
@@ -70,9 +76,10 @@ header {
 }
 
 .search-bar button {
-    background-color: #A29393;
+    background-color: #A29393; /* Cor do botão */
 }
 
+/* ===== Conteúdo principal ===== */
 main {
     max-width: 800px;
     margin: 30px auto;
@@ -82,15 +89,17 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+/* Título principal */
 main h1 {
     font-size: 2.2em;
     font-weight: 800;
     color: #333;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #D32F2F;
+    border-bottom: 2px solid #D32F2F; /* Linha decorativa */
 }
 
+/* Primeiro parágrafo (resumo) */
 main > p:first-of-type {
     font-size: 1.2em;
     font-style: italic;
@@ -98,14 +107,15 @@ main > p:first-of-type {
     margin-bottom: 20px;
 }
 
+/* Parágrafos gerais */
 main p {
     margin-bottom: 1em;
     text-align: justify;
 }
 
+/* ===== Imagem da notícia ===== */
 .imagemNoticia1 {
     width: 100%;
-    height: auto;
     max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
@@ -113,17 +123,9 @@ main p {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-main p:contains {
-    background-color: #FFFDE7;
-    border-left: 5px solid  #FFC107; /* Borda amarela */
-    padding: 10px;
-    border-radius: 4px;
-    font-weight: bold;
-    color: #616161;
-}
-
+/* ===== Tabelas ===== */
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Borda da tabela */
 }
 
 td {
@@ -132,16 +134,17 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Linhas alternadas */
 }
 
 tr td:first-child {
     font-weight: bold;
     background-color: #f9f9f9;
-    width: 35%; /*Ocupa um terço em telas maiores */
+    width: 35%;
     color:#333;
 }
 
+/* ===== Subtítulos ===== */
 h2 {
     font-size: 1.8em;
     color:#333;
@@ -150,6 +153,7 @@ h2 {
     padding-bottom: 5px;
 }
 
+/* Parágrafo após h2 */
 .main h2 + p {
     background-color: #EFEBE9;
     padding: 15px;
@@ -157,6 +161,7 @@ h2 {
     border-left: 5px solid #FFC107;
 }
 
+/* ===== Rodapé ===== */
 footer {
     background-color: #890000;
     color: white;
@@ -166,7 +171,8 @@ footer {
     font-size: 0.9em;
 }
 
-@media (min-widt: 768px) {
+/* ===== Responsividade (tablet/desktop) ===== */
+@media (min-width: 768px) {
     .search-bar {
         order: initial;
         width: 250px;
@@ -174,10 +180,11 @@ footer {
     }
 
     .header-content {
-        flex-wrap: nowwrap;
+        flex-wrap: nowrap;
     }
 }
 
+/* ===== Responsividade (mobile) ===== */
 @media (max-width: 600px) {
     main{
         padding: 10px;
@@ -188,6 +195,7 @@ footer {
         font-size: 1.8em;
     }
 
+    /* Tabela responsiva */
     table, tbody, tr, td {
         display: block;
         width: 100%;
@@ -196,18 +204,17 @@ footer {
     tr {
         margin-bottom: 15px;
         border: 1px solid #ddd;
-        border-radius: 4px 4px 0 0;
-        border-bottom: 4px;
+        border-radius: 4px;
     }
 
-    tr:td:first-child {
+    tr td:first-child {
         background-color: #D32F2F; 
         color: white;
         padding: 10px;
         border-radius: 4px 4px 0 0;
-        border-bottom: none;
     }
-      tr td:last-child {
+
+    tr td:last-child {
         padding-top: 10px;
         border-radius: 0 0 4px 4px;
     }

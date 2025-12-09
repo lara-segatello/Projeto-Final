@@ -1,3 +1,4 @@
+/* === Estilo geral da página(fonte, fundo e espaçamento) === */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -7,12 +8,12 @@ body {
     color:#333;
     line-height: 1.6;
 }
-
+/* === Remove sublinhado e herda a cor dos links === */
 a {
     text-decoration: none;
     color: inherit;
 }
-
+/* === Cabeçalho fixo no topo com cor e sombra === */
 header {
     background-color: #530303;
     color: white;
@@ -22,7 +23,7 @@ header {
     top: 0;
     z-index: 1000;
 }
-
+/* === Organiza logo, menu e busca com flexbox === */
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -32,12 +33,12 @@ header {
     align-items:center;
     flex-wrap: wrap;
 }
-
+/* === Deixa a logo redonda === */
 .logo {
     border-radius: 50%;
     object-fit: cover;
 }
-
+/* === Remove marcadores e organiza meu horizontal === */
 .main-nav ul {
     list-style: none;
     padding: 0;
@@ -45,16 +46,17 @@ header {
     display: flex;
     gap: 20px;
 }
-
+/* === Estilo dos links do menu === */
 .nav-link {
     padding: 5px 10px;
     transition: color 0.3s;
     font-weight: bold;
 }
+/* === Cor ao passar o mouse === */
 .nav-link:hover {
     color: #530303;
 }
-
+/* === Estilo decampo de busca === */
 .search-bar input {
     padding: 8px 12px;
     border:none;
@@ -63,7 +65,7 @@ header {
     flex-grow: 1;
     color: #333;
 }
-
+/* === Estilo do botão de busca === */
 .search-bar button {
     background-color:  #C62828;
     color: white;
@@ -73,7 +75,7 @@ header {
     border-radius: 0 4px 4px 0;
     transition: background-color 0.3s;
 }
-
+/* === Centraliza o conteúdo principal === */
 main {
     display: flex;
     justify-content:  center;
@@ -81,7 +83,7 @@ main {
     min-height: calc(100vh - 120px); /* Garante que o formulário fique centralizado verticalmente */
     padding: 20px;
 }
-
+/* === Caixa do formulário (cor, sombra e borda) === */
 .corpoFormulario {
     background-color: #DC2424;
     color: white;
@@ -90,20 +92,20 @@ main {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     width: 100% max-width 450px;
 }
-
+/* === Título do formulário === */
 .corpoFormulario h1 {
     text-align: center;
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 25px;
 }
-
+/* === Rótulos dos campos === */
 .corpoFormulario label{
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
 }
-
+/* === Campos de texto e área de mensagem === */
 .corpoFormulario input[type="text"], .corpoFormulario textarea {
     width: 100%;
     padding: 10px;
@@ -113,22 +115,23 @@ main {
     box-sizing: border-box; /* Garante que o padding não aumente a largura total */
     color: #333;
 }
+/* === Ajustes especifícos no textárea === */
 .corpoFormulario textarea {
     min-height: 100px;
     resize: vertical;
     padding: 10px;
 }
-
+/* === Ckeckbox alinhado === */
 .corpoFormulario input[type="checkbox"] {
     width: auto;
     margin-right: 10px;
     vertical-align: middle;
 }
-
+/* === Esconde label desnecessária === */
 .corpoFormulario label[for="interreses"] {
     display: none;
 }
-
+/* === Botão de envio === */
 .corpoFormulario button[type="enviar"] {
     display: block;
     width: 100%;
@@ -143,17 +146,17 @@ main {
     margin-top: 20px;
     transition: background-color 0.3s, transform 0.2s;
 }
-
+/* === Efeito hover no botão === */
 .corpoFormulario button[type="enviar"]:hover {
     background-color: #FFC107;
     transform:translateY(-2px);
 }
-
+/* === Remove quebras de linhas do HTML === */
 .corpoFormulario br {
     display: none; /* Remove os <br> desnecessários do HTML para melhor controle com CSS */
 }
 
-/* === Footer (Rodapé) === */
+/* === Rodapé da página === */
 footer {
     background-color: #890000;
     color: white;
@@ -161,7 +164,7 @@ footer {
     padding: 15px 0;
     font-size: 0.9em;
 }
-
+/* === Ajustes a diferentes telas (Responsividade) === */
 @media (min-width: 768px) {
     .search-bar {
         order: initial;

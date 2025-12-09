@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contato.css">
+<!--Cabeça da página-->
+<head> 
+    <meta charset="UTF-8"> <!-- Define o padrão de caracteres (acentuação correta) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que o site seja responsivo em diferentes dispositivos -->
+    <link rel="stylesheet" href="css/contato.css">  <!-- Importa o arquivo CSS específico da página de notícias -->
     <title>NewsLinks</title>
 
-    
-    <link rel="shortcut icon" href="img/unnamed.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/unnamed.jpg" type="image/x-icon"> <!-- Ícone da aba do site  -->
 </head>
+
+<!--Corpo da página-->
 <body>
-    <header>
-            <div class="header-content">
-            <img src="img/unnamed.jpg" alt="LogoNews Life" class="logo" width="40px" height="40px">
+    <header><!--Cabeçalho do site-->
+            <div class="header-content"> <!-- Container do conteúdo do cabeçalho -->
+            <img src="img/unnamed.jpg" alt="LogoNews Life" class="logo" width="40px" height="40px"><!-- Logo do site -->
+            <!--Formulário de Busca do Cabeçalho-->
             <form class="search-bar" action="/search" method="get"> 
             <input type="text" placeholder="Busque" name="p" aria-label="Pesquisar uma informação">
             <button type="submit">🔍</button>
         </form>
+        <!-- Menu de navegação -->
         <nav class="main-nav">
             <ul>
+                    <!-- Lista de lnks para as diferentes páginas-->
                     <li><a href="index.html" class="nav-link">Página Inicial</a></li>
                     <li><a href="contato.html" class="nav-link">Contato</a></li>
                     <li><a href="noticias.html" class="nav-link">Noticias</a></li>
@@ -26,27 +31,28 @@
         </div>
     </header>
     <main>
-        <div class="corpoFormulario">
+        <!-- Conteúdo principal da página -->
+        <div class="corpoFormulario"> <!-- Container do Formulário -->
          <h1>Entre em contato conosco</h1>
          <label for="name">Nome</label>
          <input type="text" id="name" name="Nome" placeholder="Digite seu Email" maxlenght="50" size="30" aria-live="polite" action method="post"  required>
             <br></br>
          <label for="Telefone">Telefone</label>
          <input type="text" id="telefone" name="Telefone" placeholder="(XX)XXXXX-XXXX" maxlenght="50" size="30" aria-live="polite" action method="post" required>
-            <br></br>
+            <br></br> <!--Quebra de linha-->
          <label for="email">Email</label>
          <input type="text" id="email" name="Email" placeholder="Digite seu Email" maxlenght="50" size="30" aria-live="polite" action method="post"  required>
-        <label for="interesses">Interreses</label>
+         <label for="interesses">Interreses</label>
         
          <textarea type="text" id="interreses" name="Interreses" placeholder="Apresente seus Interreses" maxlenght="50" size="30" action method="post" aria-live="polite" required>
         
          </textarea>
-         <label>Termos de confiabilidade</label>
-         <input type="checkbox">
-         <button type="enviar" value="Acessar"><a  href="cadastro_produto.html" class="nav-link">Enviar</a></button>
+         <label>Termos de confiabilidade</label> <!--Texto do checkbox-->
+         <input type="checkbox"> <!--Caixa de seleção-->
+         <button type="enviar" value="Acessar"><a  href="cadastro_produto.html" class="nav-link">Enviar</a></button> <!--Botão de envio--> 
         </div>
     </main>
-    <footer>
+    <footer> <!--Rodapé do site-->
         @anna.souza 2025-11-26 NewsLinks
     </footer>
 </body>

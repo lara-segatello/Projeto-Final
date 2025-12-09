@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--Cabeça da página-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-
+    <meta charset="UTF-8" /> <!-- Define o padrão de caracteres (acentuação correta) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Garante que o site seja responsivo em diferentes dispositivos -->
+    <link rel="stylesheet" href="css/style.css" /> <!-- Importa o arquivo CSS específico da página de notícias -->
     <title>NewsLinks</title>
 
     
-    <link rel="shortcut icon" href="img/unnamed.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/unnamed.jpg" type="image/x-icon">  <!-- Ícone da aba do site  -->
   </head>
-  <body>
-    <header>
-      <div class="header-content">
+  <!-- Corpo da página -->
+  <body> 
+    <header>  <!-- Cabeçalho do site -->
+      <div class="header-content"> <!-- Container do conteúdo do cabeçalho -->
         <img
           src="img/unnamed.jpg"
           alt="LogoNews Life"
           class="logo"
           width="50px"
           height="50px"
-        />
+        /> <!-- Logo do site -->
         <br>
+        <!-- Formulário de busca -->
         <form class="search-bar" action="/search" method="get">
           <input
             type="text"
@@ -30,8 +32,9 @@
           />
           <button type="submit">🔍</button>
         </form>
-        <nav class="main-nav">
+        <nav class="main-nav"> <!-- Menu de navegação -->
           <ul>
+            <!-- Lista de links -->
             <li><a href="index.html" class="nav-link">Página Inicial</a></li>
             <li><a href="contato.html" class="nav-link">Contato</a></li>
             <li><a href="noticias.html" class="nav-link">Noticias</a></li>
@@ -39,9 +42,9 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section class="hero-section">
-        <div class="noticiaMaisRecente">
+    <main> <!-- Conteúdo principal da página -->
+      <section class="hero-section">  <!-- Seção principal de notícias -->
+        <div class="noticiaMaisRecente"> <!-- Notícia mais recente apresentada pelo site com uma manchete e subtítulo-->
           <h1>
             Dia da Consciência Negra: veja as regras para quem trabalha em 20 de
             novembro
@@ -51,8 +54,9 @@
             brasileira determina benefícios para quem vai trabalhar durante o
             feriado; veja seus direitos.
           </p>
-          <button><a href="noticia.html" class="submit">Saiba Mais</a></button>
+          <button><a href="noticia.html" class="submit">Saiba Mais</a></button> <!-- Botão de acesso a notícia  -->
         </div>
+        <!-- Notícias -->
         <div class="oneNoticia">
           <img src="img/IMG_5496-1024x761.jpg" class="primeira_noticia" />
           <h1>
@@ -134,7 +138,7 @@
         </div>
        
       </section>
-      <div class="video">
+      <div class="video"> <!--Vídeo da página inicial-->
         <iframe
           width="560"
           height="315"
@@ -148,7 +152,7 @@
       </div>
        
     </main>
-    <footer>
+    <footer> <!-- Rodapé do site-->
       @anna.souza 2025-11-26 NewsLinks
     </footer>
   </body>

@@ -1,51 +1,55 @@
+/* ===== Estilo geral da página ===== */
 body {
-    background-color: #9D9A9A;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #9D9A9A; /* Cor de fundo */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte padrão */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.6;
+    line-height: 1.6; /* Espaçamento entre linhas */
 }
 
-
+/* ===== Cabeçalho ===== */
 header {
-    background-color: #890000;
-    color: write; 
+    background-color: #890000; /* Cor do header */
+    color: white; 
     padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Mantém o cabeçalho no topo */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra */
     top: 0;
     z-index: 1000;
-
 }
 
+/* Conteúdo interno do header */
 .header-content{
     max-width:1200px;
     margin: 0 auto;
     padding: 0 20px;
     display:flex;
-    justify-content:space between;
+    justify-content: space-between; /* Espaça os itens */
     align-items: center;
     flex-wrap: wrap;
 }
 
-
+/* ===== Títulos ===== */
 h1,h2,h3,h4,h5,h6 {
     line-height: 1.2;
     margin-top: 0;
 }
 
+/* ===== Links ===== */
 a {
     text-decoration: none; 
     color: aliceblue;
 }
 
+/* ===== Logo ===== */
 .logo {
-    border-radius: 50%;
+    border-radius: 50%; /* Logo redonda */
     margin-right: 1px;
 }
 
+/* ===== Menu de navegação ===== */
 .main-nav ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores */
     padding: 0;
     margin:0;
     display:flex;
@@ -54,24 +58,25 @@ a {
 
 .nav-link {
     padding: 5px 10px;
-    transition: color 0.3;
+    transition: color 0.3s;
     font-weight: bold;
 }
 
 .nav-link:hover {
-    color: #530303; /*Amarelo no hover para destaque */
+    color: #530303; /* Cor ao passar o mouse */
 }
 
+/* ===== Barra de busca ===== */
 .search-bar {
     display: flex; 
     align-items:center;
-    margin-top: 10px; /* Espaço no mobile */
+    margin-top: 10px;
 }
 
 .search-bar input {
     padding: 8px 12px;
     border: none;
-    border-radius: 4px 0 0  4px;
+    border-radius: 4px 0 0 4px;
     outline: none;
     width: 150px;
     color: #333;
@@ -87,16 +92,18 @@ a {
     transition: background-color 0.3s;
 }
 
-.serach-bar button:hover {
+.search-bar button:hover {
     background-color: #B71C1C;
 }
 
+/* ===== Área principal ===== */
 .main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
+/* ===== Seção de notícias ===== */
 .hero-section {
     display: grid; 
     gap: 20px;
@@ -105,9 +112,10 @@ a {
     padding-top: 20px;
 }
 
+/* ===== Notícia em destaque ===== */
 .noticiaMaisRecente {
-    grid-column: 1 / -1;
-    background-color: #DC2424; /* Fundo vermelho de destaque */
+    grid-column: 1 / -1; /* Ocupa toda a largura */
+    background-color: #DC2424;
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -120,10 +128,11 @@ a {
 }
 
 .noticiaMaisRecente p{
-    font-size: medium ;
+    font-size: medium;
     opacity: 0.9;
 }
 
+/* Botão da notícia principal */
 .noticiaMaisRecente button {
     background-color: white;
     border: none; 
@@ -133,6 +142,7 @@ a {
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
 }
+
 .noticiaMaisRecente a {
     color: #DC2424;
 }
@@ -142,7 +152,9 @@ a {
     transform: translateY(-2px);
 }
 
-.oneNoticia, .twoNoticia, .threeNoticia, .fourNoticia, .fiveNoticia, .sixNoticia {
+/* ===== Cards de notícias ===== */
+.oneNoticia, .twoNoticia, .threeNoticia, 
+.fourNoticia, .fiveNoticia, .sixNoticia {
     background-color: white;
     padding:15px;
     border-radius: 8px;
@@ -150,12 +162,15 @@ a {
     transition: box-shadow 0.3s;
 }
 
+/* Hover dos cards */
 .oneNoticia:hover, .twoNoticia:hover, .threeNoticia:hover, 
 .fourNoticia:hover, .fiveNoticia:hover, .sixNoticia:hover {
-    box-shadow: 0 4px 8px rgba(0,0, o , 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.oneNoticia img, .twoNoticia img, .threeNoticia img, .fourNoticia img, .fiveNoticia img, .sixNoticia img {
+/* Imagens das notícias */
+.oneNoticia img, .twoNoticia img, .threeNoticia img, 
+.fourNoticia img, .fiveNoticia img, .sixNoticia img {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -163,25 +178,15 @@ a {
     margin-bottom: 10px;
 }
 
-.oneNoticia h1 { 
-    font-size: 1.5em; color: #D32F2F; 
-}
-.twoNoticia h2 {
-    font-size: 1.3em; color: #D32F2F; 
-}
-.threeNoticia h3 { 
-    font-size: 1.2em; color: #D32F2F; 
-}
-.fourNoticia h4 { 
-    font-size: 1.1em; color: #D32F2F; 
-}
-.fiveNoticia h5 { 
-    font-size: 1.1em; color: #D32F2F; 
-}
-.sixNoticia h6 { 
-    font-size: 1em; color: #D32F2F; 
-}
+/* Títulos das notícias */
+.oneNoticia h1 { font-size: 1.5em; color: #D32F2F; }
+.twoNoticia h2 { font-size: 1.3em; color: #D32F2F; }
+.threeNoticia h3 { font-size: 1.2em; color: #D32F2F; }
+.fourNoticia h4 { font-size: 1.1em; color: #D32F2F; }
+.fiveNoticia h5 { font-size: 1.1em; color: #D32F2F; }
+.sixNoticia h6 { font-size: 1em; color: #D32F2F; }
 
+/* Texto das notícias */
 .oneNoticia p, .twoNoticia p, .threeNoticia p, 
 .fourNoticia p, .fiveNoticia p, .sixNoticia p {
     font-size: 0.9em;
@@ -189,14 +194,16 @@ a {
     margin-bottom: 0;
 }
 
+/* ===== Vídeo ===== */
 .video {
     display: flex;
     justify-content: center;
     grid-column: 1 / -1;
-    aspect-ratio: 16 / 9;  /* Mantém a proporção 16:9 */
+    aspect-ratio: 16 / 9;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 } 
 
+/* ===== Rodapé ===== */
 footer {
     background-color: #890000;
     color:white;
@@ -205,30 +212,28 @@ footer {
     margin-top: 40px;
 }
 
+/* ===== Responsividade ===== */
 @media (min-width: 768px) {
     .header-content {
-        flex-wrap: norawp;
-        background-color: #890000;
+        flex-wrap: nowrap;
     }
     .search-bar {
         margin-top: 0;
     }
     .hero-section {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+        grid-template-columns: repeat(3, 1fr);
     }
     .noticiaMaisRecente {
         font-size: 3em;
     }
-
     .search-bar input {
         width:200px;
     }
 }
 
-/* Desktop Grande (mínimo 1024px de largura) */
+/* Desktop grande */
 @media (min-width: 1024px) {
     .oneNoticia {
-        /* Garante que a primeira notícia secundária ocupe 1 coluna, como os outros cards */
         grid-column: auto;
     }
 }
